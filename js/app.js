@@ -48,6 +48,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+    .state('tab.person', {
+      url: '/person/:personId',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-person.html',
+          controller: 'PersonCtrl'
+        }
+      }
+    })
+ 
+     .state('tab.more', {
+      url: '/more',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/tab-more.html',
+          controller: 'MoreCtrl'
+        }
+      }
+    })
+       
     .state('tab.friends', {
       url: '/friends',
       views: {

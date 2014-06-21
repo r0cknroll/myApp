@@ -5,6 +5,14 @@ angular.module('starter.controllers', [])
 	Persons.getsjon($scope);
 })
 
+.controller('PersonCtrl', function($scope) {
+	//$scope.persons = "Persons here!";	
+})
+
+.controller('MoreCtrl', function($scope) {
+	$scope.more = "Oh Yeah!!!";	
+})
+
 .controller('FriendsCtrl', function($scope, Friends) {
   $scope.friends = Friends.all();
 })

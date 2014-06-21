@@ -1,9 +1,7 @@
 angular.module('starter.services', [])
-
 /**
  * A simple example service that returns some data.
  */
-
 .factory('Details', function(){
 	var details = {id: 100, name: 'Jan Karlo Bulawan', age: 29, gender: 'Male'};
 	return details;
@@ -41,7 +39,7 @@ angular.module('starter.services', [])
 	      var RegObj = {};
 	      RegObj["SP_Name"] = "prc_user_reg";	
 	      
-	   	  $http.jsonp("http://localhost/json/index.php?callback=JSON_CALLBACK")
+	   	  $http.jsonp("http://www.photolighter.com/json/index.php?callback=JSON_CALLBACK")
 	          .success(function (data, status, headers, config) 
 	                {
 	                  	//alert("success");
@@ -51,11 +49,9 @@ angular.module('starter.services', [])
 	                })
 	          .error(function (data, status, headers, config) 
 	                {
-
 	                  //successcb("99");  
 	                  alert("Oops something went wrong. Please login and try again. Sorry for the inconvenience.");               
-	                });	 
-	        
+	                });	        
 	    }
 	  }	
 }])
